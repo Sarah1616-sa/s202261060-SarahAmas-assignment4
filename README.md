@@ -1,7 +1,5 @@
 # Sarah Almas – Personal Portfolio Website (SWE363 Assignment 4)
 
-A fully responsive, production-ready personal portfolio developed as the final submission for SWE363.
-
 This repository contains my personal portfolio website for **SWE363 Assignment 4**. The project builds on the previous assignment and presents my background, skills, experience, featured projects, and contact information in a polished single-page website.
 
 ## Project Description
@@ -44,10 +42,9 @@ python -m http.server 8000
 
 Then open `http://localhost:8000`.
 
-##  Live Demo
+## 🌐 Live Demo
 
-https://s202261060-sarah-amas-assignment4.vercel.app
-
+🔗 https://s202261060-sarah-amas-assignment4.vercel.app
 ## AI Tools Summary
 
 AI tools were used to support code refinement, documentation improvement, and front-end enhancement ideas. All AI-assisted suggestions were reviewed, edited, and validated before being included in the final project.
