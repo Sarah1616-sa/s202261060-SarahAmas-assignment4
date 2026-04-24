@@ -1,4 +1,6 @@
-# Sarah Almas Portfolio Website
+# Sarah Almas – Personal Portfolio Website (SWE363 Assignment 4)
+
+A fully responsive, production-ready personal portfolio developed as the final submission for SWE363.
 
 This repository contains my personal portfolio website for **SWE363 Assignment 4**. The project builds on the previous assignment and presents my background, skills, experience, featured projects, and contact information in a polished single-page website.
 
@@ -42,13 +44,13 @@ python -m http.server 8000
 
 Then open `http://localhost:8000`.
 
-## Deployment Link
+##  Live Demo
 
-Deployment link placeholder: `Add your live site URL here`
+https://s202261060-sarah-amas-assignment4.vercel.app
 
 ## AI Tools Summary
 
-AI tools were used to support code cleanup, documentation drafting, and front-end improvement ideas. All generated suggestions were reviewed, edited, and validated before being kept in the final project.
+AI tools were used to support code refinement, documentation improvement, and front-end enhancement ideas. All AI-assisted suggestions were reviewed, edited, and validated before being included in the final project.
 
 Detailed documentation is available in:
 
@@ -75,6 +77,14 @@ Detailed documentation is available in:
 |-- README.md
 `-- .gitignore
 ```
+
+## Browser Compatibility
+
+Tested on:
+
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
 
 ## Author
 
