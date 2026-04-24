@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sarah Bassam Almas - Software Engineering student portfolio with projects, skills, and contact information.">
+    <meta name="keywords" content="Software Engineering, KFUPM, portfolio, web development, UI/UX">
+    <title>Sarah Almas Portfolio | Assignment 4</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo" aria-label="Go to home section">
+                <span class="logo-text">SA</span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">
+                    <span class="theme-icon theme-icon-sun" aria-hidden="true">&#9728;</span>
+                    <span class="theme-icon theme-icon-moon" aria-hidden="true">&#9790;</span>
+                </button>
+                <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-background" aria-hidden="true">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-avatar" aria-hidden="true">
+                <span>SA</span>
+            </div>
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Sarah Bassam Almas</h1>
+            <p class="hero-tagline">
+                <span class="typing-text" id="typingText"></span>
+                <span class="typing-cursor" aria-hidden="true">|</span>
+            </p>
+            <p class="hero-description">
+                Building practical, user-centered solutions with a strong interest in software engineering, AI, and interface design.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+
+        <div class="hero-scroll" aria-hidden="true">
+            <span>Scroll Down</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image" data-aos="fade-right">
+                        <div class="image-frame">
+                            <div class="profile-placeholder">
+                                <span>SA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text" data-aos="fade-left">
+                        <h3>Software Engineering Student</h3>
+                        <p>I am a motivated Software Engineering undergraduate at <strong>King Fahd University of Petroleum and Minerals (KFUPM)</strong> with strong interests in artificial intelligence, user-centered system design, and data-driven applications.</p>
+                        <p>I have worked on academic projects using Python, C#, JavaFX, and Figma, and I enjoy combining technical problem-solving with clear communication and thoughtful interface design.</p>
+
+                        <div class="about-info">
+                            <div class="info-item">
+                                <span class="info-icon" aria-hidden="true">&#128205;</span>
+                                <div>
+                                    <strong>Location</strong>
+                                    <span>Dhahran, Saudi Arabia</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon" aria-hidden="true">&#127891;</span>
+                                <div>
+                                    <strong>Education</strong>
+                                    <span>B.S. Software Engineering, KFUPM</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon" aria-hidden="true">&#128231;</span>
+                                <div>
+                                    <strong>Email</strong>
+                                    <span>Almas.Sarah@outlook.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="skills">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Skills & Expertise</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+
+                <div class="skills-container">
+                    <div class="skills-category" data-aos="fade-up">
+                        <h3>Programming Languages</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon-box"><span>Py</span></div>
+                                <span class="skill-name">Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon-box"><span>Jv</span></div>
+                                <span class="skill-name">Java</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon-box"><span>C#</span></div>
+                                <span class="skill-name">C Sharp</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Design & Prototyping</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon-box"><span>Fg</span></div>
+                                <span class="skill-name">Figma</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon-box"><span>UX</span></div>
+                                <span class="skill-name">UI/UX Design</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon-box"><span>Pt</span></div>
+                                <span class="skill-name">Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Other Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon-box"><span>AI</span></div>
+                                <span class="skill-name">AI Fundamentals</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon-box"><span>Ms</span></div>
+                                <span class="skill-name">MS Office</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon-box"><span>Rs</span></div>
+                                <span class="skill-name">Research & Technical Writing</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon-box"><span>DA</span></div>
+                                <span class="skill-name">Data Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Experience & Education</h2>
+
+                <div class="timeline-container">
+                    <div class="timeline-section" data-aos="fade-right">
+                        <h3 class="timeline-heading">
+                            <span class="timeline-icon" aria-hidden="true">&#127891;</span>
+                            Education
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2022 - Present</span>
+                                    <h4>Bachelor of Software Engineering</h4>
+                                    <p class="timeline-place">King Fahd University of Petroleum and Minerals (KFUPM)</p>
+                                    <p>Studying software engineering with a focus on artificial intelligence, system design, and data-driven applications, while building experience in research, academic writing, and software development coursework.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-section" data-aos="fade-left">
+                        <h3 class="timeline-heading">
+                            <span class="timeline-icon" aria-hidden="true">&#128188;</span>
+                            Experience
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2024 - Present</span>
+                                    <h4>Computer Club Member</h4>
+                                    <p class="timeline-place">KFUPM</p>
+                                    <p>Participating in technical initiatives and university activities focused on programming, collaboration, and technology awareness.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Feb 2025 - Mar 2025</span>
+                                    <h4>Atad Program Training</h4>
+                                    <p class="timeline-place">Professional Development</p>
+                                    <p>Completed 15 training hours covering personal branding, professional communication, and interview preparation.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2024 - 2025</span>
+                                    <h4>Volunteer</h4>
+                                    <p class="timeline-place">KFUPM</p>
+                                    <p>Contributed more than 20 volunteering hours supporting campus initiatives and university events.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certifications" data-aos="fade-up">
+                    <h3 class="timeline-heading">
+                        <span class="timeline-icon" aria-hidden="true">&#127942;</span>
+                        Certifications & Training
+                    </h3>
+                    <div class="cert-grid">
+                        <div class="cert-card">
+                            <div class="cert-icon" aria-hidden="true">&#128196;</div>
+                            <h4>Microsoft Office Specialist (MOS)</h4>
+                            <p>60 Hours - Feb 2024 to Apr 2024</p>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon" aria-hidden="true">&#129302;</div>
+                            <h4>Generative AI for Software Development</h4>
+                            <p>IBM SkillsBuild training in AI-assisted coding and prompt engineering.</p>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon" aria-hidden="true">&#128202;</div>
+                            <h4>Generative AI for Data Insights</h4>
+                            <p>IBM SkillsBuild training focused on data analysis and AI-assisted insights.</p>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon" aria-hidden="true">&#128640;</div>
+                            <h4>McKinsey Forward Program</h4>
+                            <p>Problem-solving, digital tools, and professional development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="projects">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+                <p class="section-subtitle">A selection of academic work, prototypes, and live GitHub data</p>
+
+                <div class="project-controls" data-aos="fade-up" data-aos-delay="50">
+                    <div class="project-search">
+                        <label for="projectSearch" class="sr-only">Search projects</label>
+                        <input type="search" id="projectSearch" placeholder="Search projects by title, description, or tag">
+                    </div>
+
+                    <div class="filter-buttons" aria-label="Project category filters">
+                        <button class="btn btn-filter active" type="button" data-filter="all">All</button>
+                        <button class="btn btn-filter" type="button" data-filter="web">Web</button>
+                        <button class="btn btn-filter" type="button" data-filter="ui">UI</button>
+                        <button class="btn btn-filter" type="button" data-filter="other">Other</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+                    <article class="project-card featured" data-aos="fade-up" data-category="other">
+                        <div class="project-badge">Featured</div>
+                        <div class="project-image">
+                            <div class="placeholder-image gradient-1"><span>&#128640;</span></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Innovation Path Hackathon 2025</h3>
+                            <p>Collaborated with a team to propose practical technology-based solutions for real-world challenges during Innovation Path Hackathon 2025.</p>
+                            <div class="project-tags">
+                                <span class="tag">Hackathon</span>
+                                <span class="tag">Innovation</span>
+                                <span class="tag">Teamwork</span>
+                                <span class="tag">2025</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="web">
+                        <div class="project-image">
+                            <div class="placeholder-image gradient-2"><span>&#127891;</span></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Student Course Registration System</h3>
+                            <p>A Python-based system for managing student course enrollment, including authentication and enrollment tracking features.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Backend</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="200" data-category="other">
+                        <div class="project-image">
+                            <div class="placeholder-image gradient-3"><span>&#127915;</span></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Event Ticket Reservation System</h3>
+                            <p>A JavaFX application with admin and user roles for event booking, event management, and reservation tracking.</p>
+                            <div class="project-tags">
+                                <span class="tag">JavaFX</span>
+                                <span class="tag">Desktop</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="300" data-category="ui">
+                        <div class="project-image">
+                            <div class="placeholder-image gradient-4"><span>&#129309;</span></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>KFUPM Volunteering Platform</h3>
+                            <p>A Figma prototype designed to connect students with volunteering opportunities through clearer registration and participation flows.</p>
+                            <div class="project-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">UI/UX</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="400" data-category="other">
+                        <div class="project-image">
+                            <div class="placeholder-image gradient-5"><span>&#128506;</span></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>University Map & Building System</h3>
+                            <p>A C# desktop application that displays building locations, distances, and capacity information for easier campus navigation.</p>
+                            <div class="project-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">Desktop App</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="500" data-category="ui">
+                        <div class="project-image">
+                            <div class="placeholder-image gradient-6"><span>&#128218;</span></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Student Tutoring Platform</h3>
+                            <p>A UI/UX prototype for a peer tutoring platform that helps students connect with tutors across multiple subjects.</p>
+                            <div class="project-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Prototype</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="no-projects-message" id="noProjectsMessage" aria-live="polite">No projects found.</div>
+
+                <div class="github-projects-section" data-aos="fade-up">
+                    <div class="github-section-header">
+                        <div>
+                            <h3>Latest GitHub Repositories</h3>
+                            <p>Live repository data loaded from GitHub.</p>
+                        </div>
+                        <a class="github-link" href="https://github.com/Sarah1616-sa" target="_blank" rel="noopener noreferrer">View Profile</a>
+                    </div>
+
+                    <div class="github-status" id="githubStatus" aria-live="polite">Loading repositories...</div>
+                    <div class="github-grid" id="githubProjects"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+                <p class="section-subtitle">Have a question or want to work together? Feel free to reach out.</p>
+
+                <div class="contact-container">
+                    <div class="contact-info" data-aos="fade-right">
+                        <h3>Let's Connect</h3>
+                        <p>I'm currently looking for internship opportunities and meaningful projects. If you would like to collaborate or ask a question, send a message using the form.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">&#128231;</div>
+                                <div>
+                                    <strong>Email</strong>
+                                    <span>Almas.Sarah@outlook.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">&#128205;</div>
+                                <div>
+                                    <strong>Location</strong>
+                                    <span>Dhahran, Saudi Arabia</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">&#127891;</div>
+                                <div>
+                                    <strong>University</strong>
+                                    <span>KFUPM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm" data-aos="fade-left" data-aos-delay="100" novalidate>
+                        <div class="form-status" id="formStatus" aria-live="polite"></div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" required>
+                                <div class="error-message" id="name-error"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" autocomplete="email" required>
+                                <div class="error-message" id="email-error"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What is this about?">
+                            <div class="error-message" id="subject-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                            <div class="error-message" id="message-error"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Send Message</span>
+                            <span class="btn-icon" aria-hidden="true">&#10148;</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">SA</span>
+                    <p>Software Engineering student at KFUPM with an interest in practical software solutions, AI, and interface design.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sarah Bassam Almas. All rights reserved.</p>
+                <p>Built for SWE363 Assignment 4</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" type="button" aria-label="Scroll to top">
+        <span aria-hidden="true">&#8593;</span>
+    </button>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
