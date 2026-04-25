@@ -226,6 +226,10 @@ async function initGithubProjects() {
         }
 
         const repositories = await response.json();
+        if (!Array.isArray(repositories)) {
+            throw new Error('GitHub response was not a repository list');
+        }
+
         const portfolioRepos = repositories.filter((repo) => !repo.fork).slice(0, 4);
 
         if (!portfolioRepos.length) {
@@ -242,24 +246,27 @@ async function initGithubProjects() {
 }
 
 function createRepoCard(repo) {
-    const description = repo.description || 'No description provided.';
-    const language = repo.language || 'Not specified';
-    const updatedDate = new Date(repo.updated_at).toLocaleDateString('en-US', {
+    const description = repo.description || 'No description available.';
+    const language = repo.language || 'Unknown';
+    const repoName = repo.name || 'Untitled repository';
+    const repoUrl = repo.html_url || 'https://github.com/Sarah1616-sa';
+    const updatedAt = repo.updated_at ? new Date(repo.updated_at) : null;
+    const updatedDate = updatedAt && !Number.isNaN(updatedAt.getTime()) ? updatedAt.toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'short',
         day: 'numeric'
-    });
+    }) : 'Unknown';
 
     return `
         <article class="github-card">
             <div class="github-card-header">
-                <h4>${escapeHtml(repo.name)}</h4>
+                <h4>${escapeHtml(repoName)}</h4>
                 <span class="repo-language">${escapeHtml(language)}</span>
             </div>
             <p>${escapeHtml(description)}</p>
             <div class="github-card-footer">
                 <span>Updated ${escapeHtml(updatedDate)}</span>
-                <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">Open Repo</a>
+                <a href="${escapeHtml(repoUrl)}" target="_blank" rel="noopener noreferrer">Open Repo</a>
             </div>
         </article>
     `;
