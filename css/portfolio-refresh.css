@@ -45,45 +45,59 @@
     width: 100%;
     height: 100%;
     min-height: inherit;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     border: 0;
-    background: transparent;
+    background: #111318;
     cursor: zoom-in;
+    overflow: hidden;
 }
 
 .project-media-trigger img {
-    width: 100%;
-    height: 100%;
-    min-height: inherit;
     display: block;
-    object-fit: cover;
-    transition: transform .45s ease, filter .45s ease;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 520px;
+    min-height: 0;
+    object-fit: contain;
+    transition: transform .35s ease, filter .35s ease;
+    image-rendering: auto;
 }
 
 .project-card:hover .project-media-trigger img {
-    transform: scale(1.025);
+    transform: scale(1.01);
 }
 
 .project-media-panel.contain .project-media-trigger img {
     object-fit: contain;
-    padding: 1rem;
+    padding: .75rem;
     background: #17181d;
 }
 
 .project-gallery-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: .5rem;
+    gap: .65rem;
+    min-height: 420px;
     height: 100%;
+    padding: .65rem;
+    background: #111318;
 }
 
 .project-gallery-row .project-media-trigger {
-    min-height: 320px;
+    min-height: 390px;
+    border-radius: 10px;
 }
 
 .project-gallery-row .project-media-trigger img {
-    object-fit: cover;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
 }
 
 .project-content h3 {
@@ -156,7 +170,6 @@
     font-size: 1.1rem;
 }
 
-/* Real project artwork for the engineering cards that are assembled at runtime. */
 .projects-grid > .project-card:nth-of-type(6) .placeholder-image,
 .projects-grid > .project-card:nth-of-type(7) .placeholder-image,
 .projects-grid > .project-card:nth-of-type(8) .placeholder-image {
@@ -267,6 +280,8 @@
 .lightbox img {
     max-width: 100%;
     max-height: 82vh;
+    width: auto;
+    height: auto;
     object-fit: contain;
     border-radius: 14px;
     box-shadow: 0 28px 90px rgba(0, 0, 0, .45);
@@ -306,6 +321,10 @@
     .project-gallery-row .project-media-trigger {
         min-height: 240px;
     }
+
+    .project-gallery-row {
+        min-height: 300px;
+    }
 }
 
 @media (max-width: 560px) {
@@ -315,6 +334,11 @@
 
     .project-gallery-row .project-media-trigger {
         min-height: 210px;
+    }
+
+    .project-gallery-row .project-media-trigger img,
+    .project-media-trigger img {
+        max-height: 420px;
     }
 
     .metric-strip {
