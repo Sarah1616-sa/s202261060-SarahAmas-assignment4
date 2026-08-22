@@ -1,22 +1,26 @@
-# Sarah Almas – Personal Portfolio Website (SWE363 Assignment 4)
+# Sarah Almas – Software Engineering & Game Design Portfolio
 
-This repository contains my personal portfolio website for **SWE363 Assignment 4**. The project builds on the previous assignment and presents my background, skills, experience, featured projects, and contact information in a polished single-page website.
+This repository contains my personal portfolio website. It presents my background as a **Software Engineering student at KFUPM with a Game Design concentration**, alongside professional experience, game development work, software projects, UI/UX prototypes, and live GitHub repositories.
 
-## Project Description
+## Portfolio Highlights
 
-The website is designed as a professional portfolio for academic submission. It focuses on clean structure, responsive layout, improved user experience, and maintainable front-end code using only HTML, CSS, and JavaScript.
+- Game Design concentration at KFUPM
+- Game development training with POWR Games
+- Two game projects: **No Talk (بدون كلام)** and **XO Game**
+- Eight-week internship with **ASMO – Technology Function, IT Department**
+- Smart DiaGuide healthcare hackathon project
+- Academic software engineering and UI/UX projects
 
 ## Features
 
 - Responsive single-page portfolio layout
 - Light and dark theme toggle with saved preference
 - Mobile navigation menu
-- Typing effect in the hero section
-- Project category filtering
+- Dynamic typing effect highlighting software engineering and game design
+- Project category filtering, including a dedicated Games filter
 - Project search bar
 - GitHub repository section using the GitHub API
-- User-friendly API failure and empty-state messaging
-- Contact form with clear validation feedback
+- Contact form with validation feedback
 - Scroll-triggered section animations
 - Scroll-to-top button
 
@@ -26,7 +30,7 @@ The website is designed as a professional portfolio for academic submission. It 
 - CSS3
 - JavaScript (Vanilla)
 - GitHub REST API
-- Local storage for theme persistence
+- Local Storage
 
 ## How to Run Locally
 
@@ -34,7 +38,7 @@ The website is designed as a professional portfolio for academic submission. It 
 2. Open the project folder.
 3. Launch `index.html` in a browser.
 
-For a better local testing experience, you can also run a simple static server:
+For local testing with a static server:
 
 ```bash
 python -m http.server 8000
@@ -42,17 +46,9 @@ python -m http.server 8000
 
 Then open `http://localhost:8000`.
 
-## 🌐 Live Demo
+## Live Demo
 
-🔗 https://s202261060-sarah-amas-assignment4.vercel.app
-## AI Tools Summary
-
-AI tools were used to support code refinement, documentation improvement, and front-end enhancement ideas. All AI-assisted suggestions were reviewed, edited, and validated before being included in the final project.
-
-Detailed documentation is available in:
-
-- [AI Usage Report](docs/ai-usage-report.md)
-- [Technical Documentation](docs/technical-documentation.md)
+https://s202261060-sarah-amas-assignment4.vercel.app
 
 ## Project Structure
 
@@ -65,25 +61,14 @@ Detailed documentation is available in:
 |   `-- script.js
 |-- assets/
 |   `-- images/
-|       `-- .gitkeep
 |-- docs/
-|   |-- ai-usage-report.md
-|   `-- technical-documentation.md
 |-- presentation/
-|   `-- .gitkeep
 |-- README.md
 `-- .gitignore
 ```
 
-## Browser Compatibility
-
-Tested on:
-
-- Google Chrome
-- Microsoft Edge
-- Mozilla Firefox
-
 ## Author
 
 Sarah Bassam Almas  
-Software Engineering Student, KFUPM
+Software Engineering Student, KFUPM  
+Game Design Concentration
