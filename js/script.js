@@ -93,10 +93,10 @@ function initTypingEffect() {
 
     const phrases = [
         'Software Engineering Student',
-        'AI Enthusiast',
-        'UI/UX Designer',
-        'Problem Solver',
-        'Lifelong Learner'
+        'Game Design Concentration',
+        'Game Developer',
+        'Interactive Experience Builder',
+        'UI/UX Designer'
     ];
 
     let phraseIndex = 0;
@@ -206,7 +206,6 @@ function updateProjectVisibility() {
     });
 
     noProjectsMessage.classList.toggle('show', visibleCount === 0);
-
     noProjectsMessage.textContent = 'No projects found.';
 }
 
@@ -219,7 +218,7 @@ async function initGithubProjects() {
     }
 
     try {
-        const response = await fetch('https://api.github.com/users/Sarah1616-sa/repos?sort=updated&per_page=4');
+        const response = await fetch('https://api.github.com/users/Sarah1616-sa/repos?sort=updated&per_page=6');
 
         if (!response.ok) {
             throw new Error(`GitHub request failed with status ${response.status}`);
