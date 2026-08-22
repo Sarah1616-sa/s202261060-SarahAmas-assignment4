@@ -181,15 +181,15 @@
 }
 
 .projects-grid > .project-card:nth-of-type(6) .placeholder-image {
-    background-image: url('../assets/images/database-er.svg');
+    background-image: url('../assets/images/database-er.jpg');
 }
 
 .projects-grid > .project-card:nth-of-type(7) .placeholder-image {
-    background-image: url('../assets/images/tutoring-platform.svg');
+    background-image: url('../assets/images/tutoring-platform.jpg');
 }
 
 .projects-grid > .project-card:nth-of-type(8) .placeholder-image {
-    background-image: url('../assets/images/campus-map.svg');
+    background-image: url('../assets/images/campus-map.jpg');
 }
 
 .projects-grid > .project-card:nth-of-type(6) .placeholder-image span,

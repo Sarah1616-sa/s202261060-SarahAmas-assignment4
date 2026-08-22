@@ -112,11 +112,11 @@ function rebuildProjectPortfolio() {
             <div class="project-badge">POWR Games · Featured</div>
             <div class="project-media-panel">
                 <div class="project-gallery-row">
-                    <button class="project-media-trigger" type="button" data-lightbox-src="assets/images/no-talk-home.svg" data-lightbox-caption="No Talk — player entry and room creation screen">
-                        <img src="assets/images/no-talk-home.svg" alt="No Talk game home screen with room creation interface" loading="lazy">
+                    <button class="project-media-trigger" type="button" data-lightbox-src="assets/images/no-talk-home.jpg" data-lightbox-caption="No Talk — player entry and room creation screen">
+                        <img src="assets/images/no-talk-home.jpg" alt="No Talk game home screen with room creation interface" loading="lazy">
                     </button>
-                    <button class="project-media-trigger" type="button" data-lightbox-src="assets/images/no-talk-case-study.svg" data-lightbox-caption="No Talk — gameplay stage, room settings, and POWR platform integration">
-                        <img src="assets/images/no-talk-case-study.svg" alt="No Talk gameplay stage, room configuration, and POWR platform screens" loading="lazy">
+                    <button class="project-media-trigger" type="button" data-lightbox-src="assets/images/no-talk-stage.jpg" data-lightbox-caption="No Talk — gameplay stage, room settings, and POWR platform integration">
+                        <img src="assets/images/no-talk-stage.jpg" alt="No Talk gameplay stage, room configuration, and POWR platform screens" loading="lazy">
                     </button>
                 </div>
             </div>
@@ -142,8 +142,8 @@ function rebuildProjectPortfolio() {
         <article class="project-card case-study featured" data-aos="fade-up" data-category="game">
             <div class="project-badge">POWR Games</div>
             <div class="project-media-panel contain">
-                <button class="project-media-trigger" type="button" data-lightbox-src="assets/images/xo-game-flow.svg" data-lightbox-caption="XO — full seven-screen gameplay flow">
-                    <img src="assets/images/xo-game-flow.svg" alt="XO game full flow showing splash, rooms, lobby, questions, board, power clash, and winner screen" loading="lazy">
+                <button class="project-media-trigger" type="button" data-lightbox-src="assets/images/xo-game-flow.jpg" data-lightbox-caption="XO — full seven-screen gameplay flow">
+                    <img src="assets/images/xo-game-flow.jpg" alt="XO game full flow showing splash, rooms, lobby, questions, board, power clash, and winner screen" loading="lazy">
                 </button>
             </div>
             <div class="project-content">
@@ -167,8 +167,8 @@ function rebuildProjectPortfolio() {
         <article class="project-card case-study featured" data-aos="fade-up" data-category="web">
             <div class="project-badge">Healthcare Hackathon</div>
             <div class="project-media-panel contain">
-                <button class="project-media-trigger" type="button" data-lightbox-src="assets/images/diaguide-case-study.svg" data-lightbox-caption="Smart DiaGuide — patient dashboard, clinical workflows, and AI assistant concepts">
-                    <img src="assets/images/diaguide-case-study.svg" alt="Smart DiaGuide patient dashboard and AI healthcare interface concepts" loading="lazy">
+                <button class="project-media-trigger" type="button" data-lightbox-src="assets/images/smart-diaguide-1.jpg" data-lightbox-caption="Smart DiaGuide — patient dashboard, clinical workflows, and AI assistant concepts">
+                    <img src="assets/images/smart-diaguide-1.jpg" alt="Smart DiaGuide patient dashboard and AI healthcare interface concepts" loading="lazy">
                 </button>
             </div>
             <div class="project-content">
@@ -188,8 +188,8 @@ function rebuildProjectPortfolio() {
         <article class="project-card case-study featured" data-aos="fade-up" data-category="web">
             <div class="project-badge">Web Engineering</div>
             <div class="project-media-panel contain">
-                <button class="project-media-trigger" type="button" data-lightbox-src="assets/images/microconnect-case-study.svg" data-lightbox-caption="Micro Connect — brand dashboard and end-to-end influencer collaboration flows">
-                    <img src="assets/images/microconnect-case-study.svg" alt="Micro Connect brand dashboard and influencer platform screens" loading="lazy">
+                <button class="project-media-trigger" type="button" data-lightbox-src="assets/images/micro-connect-dashboard.jpg" data-lightbox-caption="Micro Connect — brand dashboard and end-to-end influencer collaboration flows">
+                    <img src="assets/images/micro-connect-dashboard.jpg" alt="Micro Connect brand dashboard and influencer platform screens" loading="lazy">
                 </button>
             </div>
             <div class="project-content">
@@ -213,8 +213,8 @@ function rebuildProjectPortfolio() {
 
         <article class="project-card compact" data-aos="fade-up" data-category="other">
             <div class="project-image">
-                <button class="project-media-trigger" type="button" data-lightbox-src="assets/images/dvsa-security.svg" data-lightbox-caption="DVSA Vulnerability Discovery & Remediation — ICS344 security project">
-                    <img src="assets/images/dvsa-security.svg" alt="DVSA vulnerability discovery and remediation project summary" loading="lazy">
+                <button class="project-media-trigger" type="button" data-lightbox-src="assets/images/dvsa.jpg" data-lightbox-caption="DVSA Vulnerability Discovery & Remediation — ICS344 security project">
+                    <img src="assets/images/dvsa.jpg" alt="DVSA vulnerability discovery and remediation project summary" loading="lazy">
                 </button>
             </div>
             <div class="project-content">
@@ -226,7 +226,11 @@ function rebuildProjectPortfolio() {
         </article>
 
         <article class="project-card compact" data-aos="fade-up" data-category="other">
-            <div class="project-image"><div class="placeholder-image gradient-2"><span>ER</span></div></div>
+            <div class="project-image">
+                <button class="project-media-trigger" type="button" data-lightbox-src="assets/images/database-er.jpg" data-lightbox-caption="Store Database System — entity relationship model">
+                    <img src="assets/images/database-er.jpg" alt="Store Database System entity relationship diagram" loading="lazy">
+                </button>
+            </div>
             <div class="project-content">
                 <h3>Store Database System</h3>
                 <p>Relational database design for customers, owners, stores, orders, products, reports, reviews, and administrative workflows.</p>
@@ -235,7 +239,11 @@ function rebuildProjectPortfolio() {
         </article>
 
         <article class="project-card compact" data-aos="fade-up" data-category="ui">
-            <div class="project-image"><div class="placeholder-image gradient-4"><span>UX</span></div></div>
+            <div class="project-image">
+                <button class="project-media-trigger" type="button" data-lightbox-src="assets/images/tutoring-platform.jpg" data-lightbox-caption="Student Tutoring Platform — interface prototype">
+                    <img src="assets/images/tutoring-platform.jpg" alt="Student Tutoring Platform interface prototype" loading="lazy">
+                </button>
+            </div>
             <div class="project-content">
                 <h3>Student Tutoring Platform</h3>
                 <p>A student-centered tutoring experience with tutor discovery, sessions, resources, profiles, and progress-oriented flows.</p>
@@ -244,7 +252,11 @@ function rebuildProjectPortfolio() {
         </article>
 
         <article class="project-card compact" data-aos="fade-up" data-category="other">
-            <div class="project-image"><div class="placeholder-image gradient-5"><span>MAP</span></div></div>
+            <div class="project-image">
+                <button class="project-media-trigger" type="button" data-lightbox-src="assets/images/campus-map.jpg" data-lightbox-caption="University Map & Building System — campus visualization">
+                    <img src="assets/images/campus-map.jpg" alt="University Map and Building System campus visualization" loading="lazy">
+                </button>
+            </div>
             <div class="project-content">
                 <h3>University Map & Building System</h3>
                 <p>A C# desktop application for visualizing campus buildings, calculating distances, and showing building capacity information.</p>
