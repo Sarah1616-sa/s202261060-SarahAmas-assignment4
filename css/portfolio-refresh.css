@@ -156,6 +156,35 @@
     font-size: 1.1rem;
 }
 
+/* Real project artwork for the engineering cards that are assembled at runtime. */
+.projects-grid > .project-card:nth-of-type(6) .placeholder-image,
+.projects-grid > .project-card:nth-of-type(7) .placeholder-image,
+.projects-grid > .project-card:nth-of-type(8) .placeholder-image {
+    background-color: #17181d;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 0;
+}
+
+.projects-grid > .project-card:nth-of-type(6) .placeholder-image {
+    background-image: url('../assets/images/database-er.svg');
+}
+
+.projects-grid > .project-card:nth-of-type(7) .placeholder-image {
+    background-image: url('../assets/images/tutoring-platform.svg');
+}
+
+.projects-grid > .project-card:nth-of-type(8) .placeholder-image {
+    background-image: url('../assets/images/campus-map.svg');
+}
+
+.projects-grid > .project-card:nth-of-type(6) .placeholder-image span,
+.projects-grid > .project-card:nth-of-type(7) .placeholder-image span,
+.projects-grid > .project-card:nth-of-type(8) .placeholder-image span {
+    display: none;
+}
+
 .metric-strip {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
