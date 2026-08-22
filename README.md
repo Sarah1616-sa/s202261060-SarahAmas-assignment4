@@ -1,6 +1,6 @@
-# Sarah Almas – Software Engineering & Game Design Portfolio
+# Sarah Almas | Software Engineer & Game Designer
 
-This repository contains my personal portfolio website. It presents my background as a **Software Engineering student at KFUPM with a Game Design concentration**, alongside professional experience, game development work, software projects, UI/UX prototypes, and live GitHub repositories.
+This repository contains my professional personal portfolio website. It presents my background as a **software engineer and game designer**, alongside professional experience, game development work, software projects, UI/UX prototypes, and live GitHub repositories.
 
 ## Portfolio Highlights
 
@@ -48,7 +48,7 @@ Then open `http://localhost:8000`.
 
 ## Live Demo
 
-https://s202261060-sarah-amas-assignment4.vercel.app
+https://sarah-almas-portfolio.vercel.app
 
 ## Project Structure
 

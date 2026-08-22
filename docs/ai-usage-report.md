@@ -7,7 +7,7 @@
 
 ## Use Cases
 
-- Reorganizing the project into the required Assignment 4 folder structure
+- Reorganizing the project into a professional personal portfolio structure
 - Cleaning HTML, CSS, and JavaScript for readability and consistency
 - Improving responsiveness and interface spacing without changing the core design
 - Adding clear error handling for form validation and GitHub API states
@@ -22,7 +22,7 @@
 
 ## Challenges
 
-- AI suggestions still required manual review to ensure they matched assignment requirements
+- AI suggestions still required manual review to ensure they matched the portfolio goals
 - Some recommendations needed simplification to avoid overcomplicating the portfolio
 - Functional changes had to be checked carefully so the original behavior was not broken
 
@@ -36,6 +36,6 @@
 ## Responsible Use
 
 - AI was used as a support tool, not as a replacement for understanding the project
-- All generated code and writing were reviewed, edited, and aligned with assignment goals
+- All generated code and writing were reviewed, edited, and aligned with portfolio goals
 - The final portfolio content reflects my own background, projects, and academic work
 - I can explain the implemented features, file structure, and project logic

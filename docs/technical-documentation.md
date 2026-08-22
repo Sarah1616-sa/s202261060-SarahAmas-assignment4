@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a single-page portfolio website created for SWE363 Assignment 4. It presents personal information, academic background, technical skills, selected projects, and a contact form in a responsive and organized front-end application.
+This project is a single-page professional personal portfolio website for Sarah Almas. It presents personal information, academic background, technical skills, selected projects, and a contact form in a responsive and organized front-end application.
 
 ## Technologies Used
 
