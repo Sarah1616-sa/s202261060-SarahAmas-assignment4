@@ -1,0 +1,327 @@
+/* 2026 portfolio case-study refresh */
+.portfolio-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    margin-bottom: .65rem;
+    color: var(--accent-primary);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.project-card.case-study {
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+}
+
+.project-card.case-study.featured {
+    display: grid;
+    grid-template-columns: minmax(280px, .95fr) minmax(300px, 1.05fr);
+    grid-column: 1 / -1;
+    min-height: 380px;
+}
+
+.project-card.case-study.featured:nth-of-type(even) .project-media-panel {
+    order: 2;
+}
+
+.project-card.case-study .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(1.35rem, 3vw, 2.25rem);
+}
+
+.project-media-panel {
+    position: relative;
+    min-height: 320px;
+    overflow: hidden;
+    background: #111318;
+}
+
+.project-media-trigger {
+    width: 100%;
+    height: 100%;
+    min-height: inherit;
+    display: block;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: zoom-in;
+}
+
+.project-media-trigger img {
+    width: 100%;
+    height: 100%;
+    min-height: inherit;
+    display: block;
+    object-fit: cover;
+    transition: transform .45s ease, filter .45s ease;
+}
+
+.project-card:hover .project-media-trigger img {
+    transform: scale(1.025);
+}
+
+.project-media-panel.contain .project-media-trigger img {
+    object-fit: contain;
+    padding: 1rem;
+    background: #17181d;
+}
+
+.project-gallery-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+    height: 100%;
+}
+
+.project-gallery-row .project-media-trigger {
+    min-height: 320px;
+}
+
+.project-gallery-row .project-media-trigger img {
+    object-fit: cover;
+}
+
+.project-content h3 {
+    font-size: clamp(1.35rem, 2vw, 1.75rem);
+}
+
+.project-role {
+    color: var(--accent-primary);
+    font-weight: 700;
+    margin-bottom: .8rem;
+}
+
+.project-proof {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: .25rem 0 1rem;
+}
+
+.project-proof span {
+    padding: .42rem .7rem;
+    border-radius: 999px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: .78rem;
+    font-weight: 700;
+}
+
+.project-detail-list {
+    margin: .35rem 0 1rem 1.15rem;
+    color: var(--text-secondary);
+    font-size: .92rem;
+}
+
+.project-detail-list li + li {
+    margin-top: .35rem;
+}
+
+.projects-break {
+    grid-column: 1 / -1;
+    margin: 1.5rem 0 -.25rem;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.projects-break h3 {
+    font-size: 1.35rem;
+}
+
+.projects-break p {
+    color: var(--text-secondary);
+    font-size: .9rem;
+}
+
+.project-card.compact .project-image {
+    height: 170px;
+    background: #17181d;
+}
+
+.project-card.compact .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-card.compact .project-content h3 {
+    font-size: 1.1rem;
+}
+
+/* Real project artwork for the engineering cards that are assembled at runtime. */
+.projects-grid > .project-card:nth-of-type(6) .placeholder-image,
+.projects-grid > .project-card:nth-of-type(7) .placeholder-image,
+.projects-grid > .project-card:nth-of-type(8) .placeholder-image {
+    background-color: #17181d;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 0;
+}
+
+.projects-grid > .project-card:nth-of-type(6) .placeholder-image {
+    background-image: url('../assets/images/database-er.svg');
+}
+
+.projects-grid > .project-card:nth-of-type(7) .placeholder-image {
+    background-image: url('../assets/images/tutoring-platform.svg');
+}
+
+.projects-grid > .project-card:nth-of-type(8) .placeholder-image {
+    background-image: url('../assets/images/campus-map.svg');
+}
+
+.projects-grid > .project-card:nth-of-type(6) .placeholder-image span,
+.projects-grid > .project-card:nth-of-type(7) .placeholder-image span,
+.projects-grid > .project-card:nth-of-type(8) .placeholder-image span {
+    display: none;
+}
+
+.metric-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .55rem;
+    margin: .8rem 0 1rem;
+}
+
+.metric-strip div {
+    padding: .7rem .4rem;
+    border-radius: 10px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.metric-strip strong {
+    display: block;
+    font-size: 1.15rem;
+    color: var(--accent-primary);
+}
+
+.metric-strip span {
+    color: var(--text-muted);
+    font-size: .72rem;
+}
+
+.certifications .cert-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.cert-card.credential-card {
+    text-align: left;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.credential-card .cert-icon {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: var(--gradient-primary);
+    color: #fff;
+    font-size: 1.15rem;
+}
+
+.credential-card .credential-issuer {
+    margin-top: auto;
+    padding-top: .8rem;
+    color: var(--accent-primary);
+    font-size: .78rem;
+    font-weight: 700;
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 3000;
+    display: none;
+    place-items: center;
+    padding: 2rem;
+    background: rgba(3, 6, 15, .88);
+    backdrop-filter: blur(12px);
+}
+
+.lightbox.open {
+    display: grid;
+}
+
+.lightbox-dialog {
+    position: relative;
+    max-width: min(1150px, 95vw);
+    max-height: 90vh;
+    display: grid;
+    gap: .75rem;
+}
+
+.lightbox img {
+    max-width: 100%;
+    max-height: 82vh;
+    object-fit: contain;
+    border-radius: 14px;
+    box-shadow: 0 28px 90px rgba(0, 0, 0, .45);
+    background: #111318;
+}
+
+.lightbox-caption {
+    color: #f8fafc;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 50%;
+    background: rgba(15,23,42,.92);
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    .project-card.case-study.featured {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card.case-study.featured:nth-of-type(even) .project-media-panel {
+        order: initial;
+    }
+
+    .project-media-panel,
+    .project-gallery-row .project-media-trigger {
+        min-height: 240px;
+    }
+}
+
+@media (max-width: 560px) {
+    .project-gallery-row {
+        grid-template-columns: 1fr;
+    }
+
+    .project-gallery-row .project-media-trigger {
+        min-height: 210px;
+    }
+
+    .metric-strip {
+        grid-template-columns: 1fr;
+    }
+
+    .lightbox {
+        padding: 1rem;
+    }
+}
