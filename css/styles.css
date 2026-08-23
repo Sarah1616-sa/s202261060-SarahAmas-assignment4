@@ -92,6 +92,40 @@ body.menu-open {
     overflow: hidden;
 }
 
+.loading-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 4000;
+    display: grid;
+    place-items: center;
+    background: var(--bg-primary);
+    transition: opacity var(--transition-slow), visibility var(--transition-slow);
+}
+
+.loading-screen img {
+    width: min(260px, 54vw);
+    height: auto;
+    object-fit: contain;
+    animation: brandPulse 1.6s ease-in-out infinite;
+}
+
+body.loaded .loading-screen {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@keyframes brandPulse {
+    0%, 100% {
+        opacity: .72;
+        transform: scale(.98);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.02);
+    }
+}
+
 /* Utility Classes */
 .container {
     max-width: 1200px;
@@ -130,24 +164,39 @@ body.menu-open {
 }
 
 .nav-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: .65rem;
     text-decoration: none;
 }
 
-.logo-text {
+.logo-mark {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 45px;
     height: 45px;
-    background: var(--gradient-primary);
-    color: white;
-    font-weight: 700;
-    font-size: 1.1rem;
+    background: var(--bg-tertiary);
     border-radius: 12px;
+    box-shadow: inset 0 0 0 1px var(--border-color);
+    overflow: hidden;
     transition: transform var(--transition-normal);
 }
 
-.logo-text:hover {
+.logo-mark img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+}
+
+.nav-brand-name {
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: .98rem;
+    white-space: nowrap;
+}
+
+.nav-logo:hover .logo-mark {
     transform: scale(1.05) rotate(-3deg);
 }
 
@@ -369,16 +418,21 @@ body.menu-open {
     width: 120px;
     height: 120px;
     margin: 0 auto var(--spacing-lg);
-    background: var(--gradient-primary);
+    background: var(--bg-tertiary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: white;
+    padding: 1rem;
     box-shadow: 0 10px 40px rgba(99, 102, 241, 0.4);
     animation: pulse 3s ease-in-out infinite;
+    overflow: hidden;
+}
+
+.hero-avatar img {
+    width: 84%;
+    height: 84%;
+    object-fit: contain;
 }
 
 @keyframes pulse {
@@ -654,6 +708,19 @@ body.menu-open {
     font-weight: 700;
     color: var(--accent-primary);
     box-shadow: var(--card-shadow);
+    overflow: hidden;
+}
+
+.profile-placeholder img {
+    display: block;
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+    transition: transform var(--transition-normal);
+}
+
+.profile-placeholder:hover img {
+    transform: scale(1.03);
 }
 
 .about-text h3 {
@@ -1447,17 +1514,22 @@ body.menu-open {
 }
 
 .footer-logo {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    background: var(--gradient-primary);
-    color: white;
-    font-weight: 700;
-    font-size: 1.2rem;
-    border-radius: 12px;
+    width: 132px;
+    height: 48px;
     margin-bottom: var(--spacing-sm);
+}
+
+.footer-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer-brand .footer-name {
+    color: var(--text-primary);
+    font-weight: 700;
+    margin-bottom: .35rem;
 }
 
 .footer-brand p {
@@ -1598,6 +1670,11 @@ body.menu-open {
 
     .footer-brand {
         max-width: none;
+    }
+
+    .footer-logo {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .project-card.featured {
