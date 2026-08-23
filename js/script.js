@@ -59,25 +59,33 @@ function rebuildCertifications() {
         </h3>
         <div class="cert-grid">
             <article class="cert-card credential-card">
-                <div class="cert-icon" aria-hidden="true">AI</div>
+                <button class="certificate-media-trigger" type="button" data-lightbox-src="assets/images/nita-certificate.jpg" data-lightbox-caption="Generative AI & Autonomous Systems Workshop certificate">
+                    <img src="assets/images/nita-certificate.jpg" alt="Generative AI and Autonomous Systems Workshop certificate" loading="lazy">
+                </button>
                 <h4>Generative AI & Autonomous Systems Workshop</h4>
                 <p>Hands-on professional development focused on generative AI and autonomous systems.</p>
                 <span class="credential-issuer">NITA / AIPA · 2026</span>
             </article>
             <article class="cert-card credential-card">
-                <div class="cert-icon" aria-hidden="true">FW</div>
+                <button class="certificate-media-trigger" type="button" data-lightbox-src="assets/images/mckinsey-forward.jpg" data-lightbox-caption="McKinsey.org Forward Program certificate">
+                    <img src="assets/images/mckinsey-forward.jpg" alt="McKinsey.org Forward Program certificate" loading="lazy">
+                </button>
                 <h4>McKinsey.org Forward Program</h4>
                 <p>Problem solving, adaptability, communication, digital tools, and professional growth.</p>
                 <span class="credential-issuer">McKinsey.org · 2025</span>
             </article>
             <article class="cert-card credential-card">
-                <div class="cert-icon" aria-hidden="true">AT</div>
+                <button class="certificate-media-trigger" type="button" data-lightbox-src="assets/images/atad-certificate.jpg" data-lightbox-caption="ATAD Program certificate">
+                    <img src="assets/images/atad-certificate.jpg" alt="ATAD Program certificate" loading="lazy">
+                </button>
                 <h4>ATAD Program</h4>
                 <p>Professional development training focused on career readiness, communication, and personal branding.</p>
                 <span class="credential-issuer">KFUPM Student Affairs · 2025</span>
             </article>
             <article class="cert-card credential-card">
-                <div class="cert-icon" aria-hidden="true">MS</div>
+                <button class="certificate-media-trigger" type="button" data-lightbox-src="assets/images/mos-certificate.jpg" data-lightbox-caption="Microsoft Office Specialist (MOS) certificate">
+                    <img src="assets/images/mos-certificate.jpg" alt="Microsoft Office Specialist certificate" loading="lazy">
+                </button>
                 <h4>Microsoft Office Specialist (MOS)</h4>
                 <p>60 hours of structured Microsoft Office Specialist training.</p>
                 <span class="credential-issuer">KFUPM · 2024</span>

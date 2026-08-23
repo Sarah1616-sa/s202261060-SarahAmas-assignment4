@@ -902,11 +902,6 @@ body.menu-open {
     border-color: var(--accent-primary);
 }
 
-.cert-icon {
-    font-size: 2.5rem;
-    margin-bottom: var(--spacing-sm);
-}
-
 .cert-card h4 {
     color: var(--text-primary);
     font-size: 1rem;
