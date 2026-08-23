@@ -40,7 +40,7 @@ function applyPortfolioRefresh() {
 function enhancePowrExperience() {
     document.querySelectorAll('.timeline-content').forEach((item) => {
         const heading = item.querySelector('h4');
-        if (!heading || !heading.textContent.includes('Game Development Trainee')) return;
+        if (!heading || !heading.textContent.includes('Game Development Intern')) return;
         const description = item.querySelector('p:last-child');
         if (description) {
             description.textContent = 'Developed two interactive game projects at POWR Games, working across gameplay flow, UI/UX, real-time player interactions, testing, iteration, and product polish. I also added micro-interactions such as character motion triggered from the game logo to make the interface feel more alive.';

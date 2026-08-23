@@ -7,7 +7,6 @@ This repository contains my professional personal portfolio website. It presents
 - Game Design concentration at KFUPM
 - Game development training with POWR Games
 - Two game projects: **No Talk (بدون كلام)** and **XO Game**
-- Eight-week internship with **ASMO – Technology Function, IT Department**
 - Smart DiaGuide healthcare hackathon project
 - Academic software engineering and UI/UX projects
 
